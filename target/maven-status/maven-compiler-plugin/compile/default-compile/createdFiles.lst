@@ -1,0 +1,5 @@
+com/amazon/dataprovider/CredentialsDataProvider.class
+com/amazon/constants/Constants.class
+com/amazon/common/CommonUtils.class
+com/amazon/InputDataPojo/WebConfig.class
+com/amazon/InputDataPojo/ValidLogin.class

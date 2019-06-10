@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.amazon.test.LoginTest" duration-ms="17794" started-at="2019-06-10T14:00:42Z" finished-at="2019-06-10T14:01:00Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="17794" started-at="2019-06-10T14:00:42Z" finished-at="2019-06-10T14:01:00Z">
+      <class name="com.amazon.test.LoginTest">
+        <test-method status="PASS" signature="sanity_loginWithValidEmail(com.amazon.InputDataPojo.ValidLogin)[pri:1, instance:com.amazon.test.LoginTest@340f438e]" name="sanity_loginWithValidEmail" duration-ms="17548" started-at="2019-06-10T19:30:43Z" data-provider="ValidLogin" finished-at="2019-06-10T19:31:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.amazon.InputDataPojo.ValidLogin@7fbdb894]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanity_loginWithValidEmail -->
+      </class> <!-- com.amazon.test.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.amazon.test.LoginTest -->
+</testng-results>
