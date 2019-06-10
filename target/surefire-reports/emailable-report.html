@@ -1,39 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Command line suite</th></tr><tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,565</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.test.AddToCartTest</td><td><a href="#m0">sanity_addToCartHeadPhone</a></td><td rowspan="1">1560193799465</td><td rowspan="1">1107</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.test.LoginTest</td><td><a href="#m1">sanity_loginWithValidEmail</a></td><td rowspan="1">1560193781215</td><td rowspan="1">18249</td></tr></tbody></table><h2>Command line test</h2><h3 id="m0">com.amazon.test.AddToCartTest#sanity_addToCartHeadPhone</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Unable to convert: {actions=[org.openqa.selenium.interactions.Sequence@49c66ade]}
-	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:68)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:229)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:118)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:652)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
-	at com.amazon.pageActions.AddToCartAction.addHeadphonesToCart(AddToCartAction.java:29)
-	at com.amazon.test.AddToCartTest.sanity_addToCartHeadPhone(AddToCartTest.java:14)
-Caused by: org.openqa.selenium.WebDriverException: Unable to convert: {actions=[org.openqa.selenium.interactions.Sequence@49c66ade]}
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:87)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:65)
-	... 45 more
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;C02QT28DG8WP&apos;, ip: &apos;fe80:0:0:0:1cb6:c68a:de3a:3de7%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:202)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:154)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:142)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:85)
-	... 46 more
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:185)
-	... 49 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;nav-link-shopall&quot;]/span[2]&quot;}
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Command line suite</th></tr><tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,193</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.test.AddToCartTest</td><td><a href="#m0">sanity_addToCartHeadPhone</a></td><td rowspan="1">1560195960561</td><td rowspan="1">31223</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.test.LoginTest</td><td><a href="#m1">sanity_loginWithValidEmail</a></td><td rowspan="1">1560195942791</td><td rowspan="1">17767</td></tr></tbody></table><h2>Command line test</h2><h3 id="m0">com.amazon.test.AddToCartTest#sanity_addToCartHeadPhone</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.amazon.InputDataPojo.ValidLogin@106cc338</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&quot;categoryTilesSoftlines_21326&quot;]/div/div[1]/div/a/div/span&apos; (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.amazon.pageActions.AddToCartAction.addHeadphonesToCart(AddToCartAction.java:31)
+	at com.amazon.test.AddToCartTest.sanity_addToCartHeadPhone(AddToCartTest.java:23)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;categoryTilesSoftlines_21326&quot;]/div/div[1]/div/a/div/span&quot;}
   (Session info: chrome=75.0.3770.80)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
 System info: host: &apos;C02QT28DG8WP&apos;, ip: &apos;fe80:0:0:0:1cb6:c68a:de3a:3de7%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_211&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}), userDataDir=/var/folders/t6/b__0k81j7k38mhr2k1xz966x8sd982/T/.com.google.Chrome.cUtMGT}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60292}, acceptInsecureCerts=false, browserVersion=75.0.3770.80, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
-Session ID: e258390bd65c37bb2b50c0c48595f4b7
-*** Element info: {Using=xpath, value=//*[@id=&quot;nav-link-shopall&quot;]/span[2]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}), userDataDir=/var/folders/t6/b__0k81j7k38mhr2k1xz966x8sd982/T/.com.google.Chrome.s383H1}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59080}, acceptInsecureCerts=false, browserVersion=75.0.3770.80, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
+Session ID: 48604eb268bed3431bc6b76205415413
+*** Element info: {Using=xpath, value=//*[@id=&quot;categoryTilesSoftlines_21326&quot;]/div/div[1]/div/a/div/span}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -46,10 +25,13 @@ Session ID: e258390bd65c37bb2b50c0c48595f4b7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:203)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:154)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 54 more
-... Removed 45 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.amazon.test.LoginTest#sanity_loginWithValidEmail</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.amazon.InputDataPojo.ValidLogin@1fa1cab1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 37 more
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.amazon.test.LoginTest#sanity_loginWithValidEmail</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.amazon.InputDataPojo.ValidLogin@15713d56</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

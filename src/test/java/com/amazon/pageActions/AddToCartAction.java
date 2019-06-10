@@ -28,10 +28,23 @@ public class AddToCartAction {
 		Actions action = new Actions(driver);
 		action.moveToElement(homepage.getDepartmentLink).perform();
 		homepage.getElectronics.click();
+		wait.until(ExpectedConditions.elementToBeClickable(homepage.getHeadphones));
 		homepage.getHeadphones.click();
 		wait.until(ExpectedConditions.visibilityOf(homepage.getFirstHeadphones));
 		homepage.getFirstHeadphones.click();
 		addToCart();
 	}
-
+	
+	public void addMacBookPro() {
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		HomePage homepage = new HomePage(driver);
+		homepage.getSearchBox.sendKeys("Macbook pro");
+		homepage.getSearchEnter.click();
+		wait.until(ExpectedConditions.visibilityOf(homepage.getMacbookpro));
+		homepage.getMacbookpro.click();
+		homepage.getQuantity.sendKeys("2");
+		addToCart();
+	}
+	
+	
 }

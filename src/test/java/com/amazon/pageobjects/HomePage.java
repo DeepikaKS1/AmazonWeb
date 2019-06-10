@@ -22,7 +22,7 @@ public class HomePage {
 	@FindBy(xpath="//*[@id=\"nav-flyout-shopAll\"]/div[2]/a[11]/span")
 	public WebElement getElectronics;
 	
-	@FindBy(xpath="//*[@id=\"categoryTilesSoftlines_325663\"]/div/div[1]/div/a/div/span")
+	@FindBy(xpath="//*[@id=\"categoryTilesSoftlines_21326\"]/div/div[1]/div/a/div/span")
 	public WebElement getHeadphones;
 	
 	@FindBy(xpath="//*[@id=\"search\"]/div[1]/div[2]/div/span[3]/div[1]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div/div/div[1]/h2/a/span")
@@ -30,4 +30,19 @@ public class HomePage {
 	
 	@FindBy(id="add-to-cart-button")
 	public WebElement getAddToCartBtn;
+	
+	@FindBy(id="twotabsearchtextbox")
+	public WebElement getSearchBox;
+	
+	@FindBy(xpath="/html/body/div[2]/header/div/div[1]/div[3]/div/form/div[2]/div/input")
+	public WebElement getSearchEnter;
+	
+	@FindBy(xpath="//*[@id=\"search\"]/div[1]/div[2]/div/span[3]/div[1]/div[3]/div/div/div/div[2]/div[2]/div/div[1]/div/div/div[1]/h2/a/span")
+	public WebElement getMacbookpro;
+	
+	@FindBy(id="quantity")
+	public WebElement getQuantity;
+	
+	@FindBy(id="hlb-view-cart-announce")
+	public WebElement getCartHome;
 }

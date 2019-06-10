@@ -5,7 +5,7 @@
     <classes>
       <class name="com.amazon.test.AddToCartTest">
         <methods>
-          <include name="sanity_addToCartHeadPhone"/>
+          <include name="sanity_addToCartHeadPhone" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.amazon.test.AddToCartTest -->
     </classes>

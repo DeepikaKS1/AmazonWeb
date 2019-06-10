@@ -9,7 +9,7 @@
 		</groups>
 
 		<classes>
-			<class name="com.amazon.test.LoginTest" />
+			<!--  <class name="com.amazon.test.LoginTest" /> -->
 			<class name="com.amazon.test.AddToCartTest"/>
 		</classes>
 	</test>

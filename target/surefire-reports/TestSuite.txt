@@ -1,51 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.8 sec <<< FAILURE!
-sanity_addToCartHeadPhone(com.amazon.test.AddToCartTest)  Time elapsed: 1.111 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: Unable to convert: {actions=[org.openqa.selenium.interactions.Sequence@49c66ade]}
-	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:68)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:229)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:118)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:652)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
-	at com.amazon.pageActions.AddToCartAction.addHeadphonesToCart(AddToCartAction.java:29)
-	at com.amazon.test.AddToCartTest.sanity_addToCartHeadPhone(AddToCartTest.java:14)
-Caused by: org.openqa.selenium.WebDriverException: Unable to convert: {actions=[org.openqa.selenium.interactions.Sequence@49c66ade]}
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:87)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:65)
-	... 45 more
-Caused by: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'C02QT28DG8WP', ip: 'fe80:0:0:0:1cb6:c68a:de3a:3de7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:202)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:154)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:142)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:85)
-	... 46 more
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:185)
-	... 49 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="nav-link-shopall"]/span[2]"}
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 49.401 sec <<< FAILURE!
+sanity_addToCartHeadPhone(com.amazon.test.AddToCartTest)  Time elapsed: 31.226 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="categoryTilesSoftlines_21326"]/div/div[1]/div/a/div/span' (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.amazon.pageActions.AddToCartAction.addHeadphonesToCart(AddToCartAction.java:31)
+	at com.amazon.test.AddToCartTest.sanity_addToCartHeadPhone(AddToCartTest.java:23)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="categoryTilesSoftlines_21326"]/div/div[1]/div/a/div/span"}
   (Session info: chrome=75.0.3770.80)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'C02QT28DG8WP', ip: 'fe80:0:0:0:1cb6:c68a:de3a:3de7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}), userDataDir=/var/folders/t6/b__0k81j7k38mhr2k1xz966x8sd982/T/.com.google.Chrome.cUtMGT}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60292}, acceptInsecureCerts=false, browserVersion=75.0.3770.80, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
-Session ID: e258390bd65c37bb2b50c0c48595f4b7
-*** Element info: {Using=xpath, value=//*[@id="nav-link-shopall"]/span[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}), userDataDir=/var/folders/t6/b__0k81j7k38mhr2k1xz966x8sd982/T/.com.google.Chrome.s383H1}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:59080}, acceptInsecureCerts=false, browserVersion=75.0.3770.80, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
+Session ID: 48604eb268bed3431bc6b76205415413
+*** Element info: {Using=xpath, value=//*[@id="categoryTilesSoftlines_21326"]/div/div[1]/div/a/div/span}
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
@@ -60,10 +32,13 @@ Session ID: e258390bd65c37bb2b50c0c48595f4b7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:203)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:154)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 54 more
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 37 more
 
