@@ -25,32 +25,26 @@ public class LoginPage {
 	@FindBy(id="nav-link-accountList")
 	public WebElement getSignInLink;
 	
-	public void loginWithValidEmail(String email, String password) {
-		WebDriverWait wait=new WebDriverWait(driver, 10);
-		CommonUtils.waitFor(3000);
-		//LoginPage loginPage=new LoginPage();
-		this.getSignInLink.click();
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("ap_email"))));
-		CommonUtils.waitFor(4000);
-		WebElement emailField = driver.findElement(By.id("ap_email"));
-		emailField.sendKeys(email);
-		WebElement passwordField = driver.findElement(By.id("ap_password"));
-		passwordField.sendKeys(password);
-		WebElement signInButton = driver.findElement(By.id("signInSubmit"));
-		signInButton.click();
-		WebElement userName = driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]/span[1]"));
-		wait.until(ExpectedConditions.visibilityOf(userName));
-		if(userName.isDisplayed()) {
-			System.out.println("Login is successful");
-		}
-		else {
-			System.out.println("Login is unsuccessful");
-		}
-		
-	}
+	@FindBy(id="driver.findElement(By.id(\"ap_email\")")
+	public WebElement getEmailField;
 	
-	public void addToCart() {
-		
-	}
+	@FindBy(id="ap_email")
+	public WebElement emailField;
+	
+	@FindBy(id="ap_password")
+	public WebElement passwordField;
+	
+	@FindBy(id="signInSubmit")
+	public WebElement signInButton;
+	
+//	public void clickOnSignInBtn() {
+//		this.getSignInLink.click();
+//	}
+//	
+//	public boolean isSignInBtnDisplayed() {
+//		return this.getSignInLink.isDisplayed();
+//	}
+	
+	
 
 }

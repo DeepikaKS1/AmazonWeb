@@ -1,2 +1,6 @@
 com/amazon/test/LoginTest.class
 com/amazon/pageobjects/LoginPage.class
+com/amazon/pageActions/AddToCartAction.class
+com/amazon/pageobjects/HomePage.class
+com/amazon/test/AddToCartTest.class
+com/amazon/pageActions/LoginAction.class
