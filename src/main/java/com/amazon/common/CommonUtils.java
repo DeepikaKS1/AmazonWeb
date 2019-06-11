@@ -18,7 +18,7 @@ public class CommonUtils {
 	        }
 	    }
 	   
-	    public static void waitFor(int durationInMilliSeconds) {
+	    public void waitFor(int durationInMilliSeconds) {
 	    	 try {
 	             Thread.sleep(durationInMilliSeconds);
 	         } catch (InterruptedException e) {

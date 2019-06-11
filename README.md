@@ -1,29 +1,29 @@
-# TestVagrant hiring challenge for applicants 
+# Amazon Web Automation cases
 
 About the codebase:
 ---------------------------------
-*This is a simple test project for testing a few scenarios on a sample flight/hotel booking website. There are **3 tests** in total spread over 3 test classes. Following tech stack has been used to develop the same.*
+*This is a simple test project for testing a few scenarios on amazon website. There are **3 tests** in total spread over 2 test classes. Following tech stack has been used to develop the same.*
 
-**Tech Stack:** *Java*  *Selenium* *TestNG*  *Gradle/Maven*
+**Tech Stack:** *Java*  *Selenium* *TestNG*  *Maven*
 
 Problem Statement
 ----------------------------------
 **Tasks:**
 
-1. Test are failing which needs your expertise to fix it.
-2. Review and point out design issues with the current codebase/framework, if any.
-3. Improve/refactor the code to implement your suggestions.
+1. Perform a simple login and logout flow on the site.
+2. Select Departments section > Electronics > Headphones > Select first available headphone and Add
+to cart.
+3. Search for Macbook pro from Search bar and select 2nd available product and add to cart with
+Quantity as 2.
+4. Select cart from home and remove the earlier added headphones.
+5. Reduce the quantity of the macbook pro product to 1 and proceed to checkout.
+    1
+ 6. Data drive/parameterize to search for multiple different products via search bar.
+7. Implement a reporting framework of your choice to display the test results.
 
-**Expectation:**
-1. Create a GitHub account if not existing already.
-2. Fork this repo (DO NOT CLONE).
-3. Fix the errors and refactor the code, consider **abstractions, reusability and maintenance.**
-4. Make sure you make multiple check-ins in the process, we would love to see your progress bit by bit.
-5. Also check-in a separate file where you should list all your code review comments.
-6. Send us the link of your GitHub repo to **careers@testvagrant.com**. Also attach your **resume**.
+Solution
+---------------------------------
 
-**The parameters of evaluation:**
-1. Naming Conventions & readability of code
-2. Modularization & Abstraction
-3. Demonstration of OO concepts & Design Patterns
-4. Etiquette of Version control
+1. Identified elements with id, xpath.
+2. Wrote classes with page objects, actions and actual tests.
+3. Performed operations on actions class.

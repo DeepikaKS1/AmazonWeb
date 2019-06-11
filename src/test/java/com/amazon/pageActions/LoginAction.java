@@ -3,7 +3,7 @@ package com.amazon.pageActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,19 +12,25 @@ import com.amazon.pageobjects.LoginPage;
 
 public class LoginAction {
 	WebDriver driver;
+	CommonUtils commonUtils;
+	LoginPage loginPage;
+	Actions action;
 	
 	public LoginAction(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(driver, this);
 		this.driver = driver;
+		commonUtils = new CommonUtils();
+		
+		action = new Actions(driver);
 	}
 	public void loginWithEmail(String email, String password) {
 		
 		WebDriverWait wait=new WebDriverWait(driver, 10);
-		CommonUtils.waitFor(5000);
-		LoginPage loginPage=new LoginPage(driver);
+		commonUtils.waitFor(5000);
+		loginPage = new LoginPage(driver);
 		loginPage.getSignInLink.click();
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("ap_email"))));
-		CommonUtils.waitFor(4000);
+		commonUtils.waitFor(4000);
 		loginPage.emailField.sendKeys(email);
 		loginPage.passwordField.sendKeys(password);
 		loginPage.signInButton.click();
@@ -37,5 +43,12 @@ public class LoginAction {
 		else {
 			System.out.println("Login is unsuccessful");
 		}
+	}
+	
+	public void logout() {
+		WebElement signInList = driver.findElement(By.id("nav-link-accountList"));
+		action.moveToElement(signInList).perform();
+		WebElement signOutButton = driver.findElement(By.xpath("//*[@id=\"nav-item-signout\"]/span"));
+		signOutButton.click();
 	}
 }
