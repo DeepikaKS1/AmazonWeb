@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.amazon.test.AddToCartTest" time="51.787" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="com.amazon.test.AddToCartTest" time="55.305" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib"/>
@@ -26,8 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="suiteXmlFile" value="testng.xml"/>
-    <property name="classworlds.conf" value="/Users/k.deepika/androidworkspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8774279136269100123.tmp"/>
+    <property name="classworlds.conf" value="/Users/k.deepika/androidworkspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5555799905423416110.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/k.deepika/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -45,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test -DsuiteXmlFile=testng.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,8 +62,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_loginWithValidEmail" time="15.764"/>
-  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_addToCartHeadPhone" time="16.377"/>
-  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_addToCartMacbook" time="11.332"/>
-  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_deleteHeadPhonesAndMacFromCart" time="8.314"/>
+  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_loginWithValidEmail" time="15.43"/>
+  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_addToCartHeadPhone" time="16.218"/>
+  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_addToCartMacbook" time="14.729"/>
+  <testcase classname="com.amazon.test.AddToCartTest" name="sanity_deleteHeadPhonesAndMacFromCart" time="8.928"/>
 </testsuite>
