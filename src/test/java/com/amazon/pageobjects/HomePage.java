@@ -58,6 +58,9 @@ public class HomePage {
 	@FindBy(xpath="//*[@id=\"nav-search\"]/form/div[2]/div/input")
 	public WebElement getSearchEnter;
 	
+//	@FindBy(id="nav-search-submit-text")
+//	public WebElement getSearchEnter;
+	
 	@FindBy(id="pdagDesktopSparkleDescription2")
 	public WebElement getMacbookpro;
 	

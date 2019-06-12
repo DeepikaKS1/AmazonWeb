@@ -4,10 +4,12 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.amazon.InputDataPojo.ValidLogin;
@@ -20,7 +22,7 @@ public class AddToCartTest {
 	
 	CommonUtils commonutils;
 	WebDriver driver;
-	AddToCartAction addToCartMacBook;
+	AddToCartAction addToCartAction;
 	
 
 	public AddToCartTest() {
@@ -29,9 +31,18 @@ public class AddToCartTest {
 	}
 	
 	@BeforeTest
-	public void beforeClass() {
-		driver = new ChromeDriver();
-		addToCartMacBook = new AddToCartAction(driver);
+	public void beforeClass(){
+		
+//		if(browser.equalsIgnoreCase("chrome")) {	
+			driver = new ChromeDriver();
+//		}
+//		else if(browser.equalsIgnoreCase("firefox")) {
+//			driver = new FirefoxDriver();
+//		}
+//		else 
+//			throw new Exception("Browser is not correct");
+		addToCartAction = new AddToCartAction(driver);
+		
 	}
 	
 	@Test(dataProviderClass = CredentialsDataProvider.class, dataProvider = "ValidLogin", priority = 1, enabled = true)
@@ -59,16 +70,17 @@ public class AddToCartTest {
 	}
 	
 	@Test(priority = 4, enabled = true)
-	public void sanity_deleteHeadPhonesFromCart() {
-		addToCartMacBook.navigateToHomePage();
-		addToCartMacBook.deleteHeadPhones();
+	public void sanity_deleteHeadPhonesAndMacFromCart() {
+		addToCartAction.navigateToHomePage();
+		addToCartAction.sanity_deleteHeadPhonesFromCart();
+		addToCartAction.sanity_reduceMacQuantityFromCart();
 	}
 	
 	@AfterTest
 	public void afterClass()
 	{	
 		LoginAction loginAction= new LoginAction(driver);
-		loginAction.logout();
+		//loginAction.logout();
 		driver.quit();
 	}
 	

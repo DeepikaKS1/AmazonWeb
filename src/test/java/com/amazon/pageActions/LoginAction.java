@@ -46,9 +46,11 @@ public class LoginAction {
 	}
 	
 	public void logout() {
-		WebElement signInList = driver.findElement(By.id("nav-link-accountList"));
-		action.moveToElement(signInList).perform();
-		WebElement signOutButton = driver.findElement(By.xpath("//*[@id=\"nav-item-signout\"]/span"));
-		signOutButton.click();
+		//WebElement signInList = driver.findElement(By.id("nav-link-accountList"));
+		//WebDriverWait wait = new WebDriverWait(driver, 5);
+		//wait.until(ExpectedConditions.visibilityOf(loginPage.signInList));
+		action.moveToElement(loginPage.signInList).perform();
+		//WebElement signOutButton = driver.findElement(By.xpath("//*[@id=\"nav-item-signout\"]/span"));
+		loginPage.signOutButton.click();
 	}
 }

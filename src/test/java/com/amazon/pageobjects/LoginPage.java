@@ -37,17 +37,10 @@ public class LoginPage {
 	@FindBy(id="signInSubmit")
 	public WebElement signInButton;
 	
-//	@FindBy(xpath="//*[@id="nav-item-signout"]/span"))
-//	public WebElement signOutButton;
+	@FindBy(id="nav-link-accountList")
+	public WebElement signInList;
 	
-//	public void clickOnSignInBtn() {
-//		this.getSignInLink.click();
-//	}
-//	
-//	public boolean isSignInBtnDisplayed() {
-//		return this.getSignInLink.isDisplayed();
-//	}
-	
-	
+	@FindBy(xpath="//*[@id=\"nav-item-signout\"]/span")
+	public WebElement signOutButton;
 
 }

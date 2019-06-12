@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -50,8 +51,10 @@ public class AddToCartAction {
 	}
 	
 	public void addMacBookPro() {
+		
+		commonUtils.waitFor(3000);
 		homepage.getSearchBox.sendKeys("Macbook pro");
-		//commonUtils.waitFor(3000);
+		
 		homepage.getSearchEnter.click();
 		
 		wait.until(ExpectedConditions.visibilityOf(homepage.getMacbookpro));
@@ -71,28 +74,44 @@ public class AddToCartAction {
 		homepage.home.click();
 	}
 	
-	public void deleteHeadPhones() {
+	public void sanity_deleteHeadPhonesFromCart() {
 		wait.until(ExpectedConditions.visibilityOf(homepage.cartHome));
 		homepage.cartHome.click();
 		List<WebElement> cartItems = homepage.getAllCartItems();
-		
+
 		System.out.println(cartItems.size());
 		cartItems.forEach(item -> {
-			String itemName = item.findElement(By.xpath("./div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span")).getText();
+			String itemName = item.findElement(By.xpath("./div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span"))
+					.getText();
 			if (itemName.toLowerCase().contains("headphones")) {
-				WebElement deleteBtn = item.findElement(By.xpath("./div[4]/div/div[1]/div/div/div[2]/div/span[1]/span/input"));
+				commonUtils.waitFor(10);
+				System.out.println("Action on headphones");
+				WebElement deleteBtn = item
+						.findElement(By.xpath("./div[4]/div/div[1]/div/div/div[2]/div/span[1]/span/input"));
+				wait.until(ExpectedConditions.visibilityOf(deleteBtn));
 				deleteBtn.click();
 			}
-			else if(itemName.toLowerCase().contains("MacBook")) {
+		});
+	}
+	
+	public void sanity_reduceMacQuantityFromCart() {
+		wait.until(ExpectedConditions.visibilityOf(homepage.cartHome));
+		homepage.cartHome.click();
+		List<WebElement> cartItems = homepage.getAllCartItems();
+		System.out.println(cartItems.size());
+
+		cartItems.forEach(item -> {
+			String itemName = item.findElement(By.xpath("./div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span"))
+					.getText();
+			if (itemName.toLowerCase().contains("macbook")) {
+				System.out.println("Action on macbook");
 				WebElement removeMac = driver.findElement(By.id("a-autoid-0-announce"));
 				removeMac.click();
 				WebElement select1 = driver.findElement(By.id("dropdown1_0"));
 				select1.click();
+				commonUtils.waitFor(10);
 			}
 		});
-		
-		
-		
 	}
 	
 	

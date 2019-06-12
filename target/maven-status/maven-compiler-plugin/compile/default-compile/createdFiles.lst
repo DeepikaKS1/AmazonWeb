@@ -1,7 +1,6 @@
-extentReports/ExtentManager.class
-extentReports/ExtentTestManager.class
 com/amazon/dataprovider/CredentialsDataProvider.class
 com/amazon/constants/Constants.class
 com/amazon/common/CommonUtils.class
 com/amazon/InputDataPojo/WebConfig.class
+extentReports/ExtentReport.class
 com/amazon/InputDataPojo/ValidLogin.class

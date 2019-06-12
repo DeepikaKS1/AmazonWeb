@@ -2,53 +2,53 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="com.amazon.test.AddToCartTest" duration-ms="43055" started-at="2019-06-11T15:42:43Z" finished-at="2019-06-11T15:43:26Z">
+  <suite name="com.amazon.test.AddToCartTest" duration-ms="53909" started-at="2019-06-12T16:05:26Z" finished-at="2019-06-12T16:06:20Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="43055" started-at="2019-06-11T15:42:43Z" finished-at="2019-06-11T15:43:26Z">
+    <test name="Command line test" duration-ms="53909" started-at="2019-06-12T16:05:26Z" finished-at="2019-06-12T16:06:20Z">
       <class name="com.amazon.test.AddToCartTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="beforeClass" is-config="true" duration-ms="1643" started-at="2019-06-11T21:12:43Z" finished-at="2019-06-11T21:12:45Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="beforeClass" is-config="true" duration-ms="1747" started-at="2019-06-12T21:35:26Z" finished-at="2019-06-12T21:35:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="sanity_loginWithValidEmail(com.amazon.InputDataPojo.ValidLogin)[pri:1, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_loginWithValidEmail" duration-ms="13957" started-at="2019-06-11T21:12:45Z" data-provider="ValidLogin" finished-at="2019-06-11T21:12:59Z">
+        <test-method status="PASS" signature="sanity_loginWithValidEmail(com.amazon.InputDataPojo.ValidLogin)[pri:1, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_loginWithValidEmail" duration-ms="15764" started-at="2019-06-12T21:35:28Z" data-provider="ValidLogin" finished-at="2019-06-12T21:35:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@26ceffa8]]>
+                <![CDATA[com.amazon.InputDataPojo.ValidLogin@78d6692f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanity_loginWithValidEmail -->
-        <test-method status="PASS" signature="sanity_addToCartHeadPhone(com.amazon.InputDataPojo.ValidLogin)[pri:2, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_addToCartHeadPhone" duration-ms="13595" started-at="2019-06-11T21:12:59Z" data-provider="ValidLogin" finished-at="2019-06-11T21:13:13Z">
+        <test-method status="PASS" signature="sanity_addToCartHeadPhone(com.amazon.InputDataPojo.ValidLogin)[pri:2, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_addToCartHeadPhone" duration-ms="16377" started-at="2019-06-12T21:35:44Z" data-provider="ValidLogin" finished-at="2019-06-12T21:36:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@15713d56]]>
+                <![CDATA[com.amazon.InputDataPojo.ValidLogin@5c2375a9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanity_addToCartHeadPhone -->
-        <test-method status="PASS" signature="sanity_addToCartMacbook(com.amazon.InputDataPojo.ValidLogin)[pri:3, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_addToCartMacbook" duration-ms="8011" started-at="2019-06-11T21:13:13Z" data-provider="ValidLogin" finished-at="2019-06-11T21:13:21Z">
+        <test-method status="PASS" signature="sanity_addToCartMacbook(com.amazon.InputDataPojo.ValidLogin)[pri:3, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_addToCartMacbook" duration-ms="11332" started-at="2019-06-12T21:36:01Z" data-provider="ValidLogin" finished-at="2019-06-12T21:36:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@63f259c3]]>
+                <![CDATA[com.amazon.InputDataPojo.ValidLogin@60129b9a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanity_addToCartMacbook -->
-        <test-method status="PASS" signature="sanity_deleteHeadPhonesFromCart()[pri:4, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_deleteHeadPhonesFromCart" duration-ms="4196" started-at="2019-06-11T21:13:21Z" finished-at="2019-06-11T21:13:25Z">
+        <test-method status="PASS" signature="sanity_deleteHeadPhonesAndMacFromCart()[pri:4, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="sanity_deleteHeadPhonesAndMacFromCart" duration-ms="8315" started-at="2019-06-12T21:36:12Z" finished-at="2019-06-12T21:36:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanity_deleteHeadPhonesFromCart -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="afterClass" is-config="true" duration-ms="1470" started-at="2019-06-11T21:13:25Z" finished-at="2019-06-11T21:13:26Z">
+        </test-method> <!-- sanity_deleteHeadPhonesAndMacFromCart -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.test.AddToCartTest@2f7a2457]" name="afterClass" is-config="true" duration-ms="181" started-at="2019-06-12T21:36:20Z" finished-at="2019-06-12T21:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
