@@ -18,6 +18,8 @@ import com.amazon.dataprovider.CredentialsDataProvider;
 import com.amazon.pageActions.AddToCartAction;
 import com.amazon.pageActions.LoginAction;
 
+import extentReports.ExtentReport;
+
 public class AddToCartTest {
 	
 	CommonUtils commonutils;
@@ -42,6 +44,8 @@ public class AddToCartTest {
 //		else 
 //			throw new Exception("Browser is not correct");
 		addToCartAction = new AddToCartAction(driver);
+//		ExtentReport extent = new ExtentReport();
+//		logger = extent.startTest("ExtentReports");
 		
 	}
 	

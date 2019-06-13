@@ -21,6 +21,7 @@ public class ExtentReport {
 	
 	@BeforeTest
 	public void startTest() {
+		
 		extent = new ExtentReports(System.getProperty("user.dir")+"test-output/STMExtentReport.html", true);
 		extent.addSystemInfo("Host Name","AmazonWebAppTest")
 		.addSystemInfo("Environment", "Automation Testing")
