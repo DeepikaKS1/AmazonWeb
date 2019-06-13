@@ -15,7 +15,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import org.junit.Assert;
 
-public class ExtentReport {
+public class ExtentReport{
 	ExtentReports extent;
 	ExtentTest logger;
 	

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.amazon.listeners.TestListener">
+        <methods>
+          <include name="addToCartMacbook" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="sanity_deleteHeadPhonesAndMacFromCart" invocation-numbers="0"/>
+          <include name="loginWithValidEmail" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="addToCartHeadPhone" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.amazon.listeners.TestListener -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

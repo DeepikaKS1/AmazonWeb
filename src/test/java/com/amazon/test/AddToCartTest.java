@@ -1,5 +1,7 @@
 package com.amazon.test;
 
+import java.lang.reflect.Method;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +17,7 @@ import org.testng.annotations.Test;
 import com.amazon.InputDataPojo.ValidLogin;
 import com.amazon.common.CommonUtils;
 import com.amazon.dataprovider.CredentialsDataProvider;
+import com.amazon.extentReports.ExtentTestManager;
 import com.amazon.pageActions.AddToCartAction;
 import com.amazon.pageActions.LoginAction;
 
@@ -23,7 +26,7 @@ import extentReports.ExtentReport;
 public class AddToCartTest {
 	
 	CommonUtils commonutils;
-	WebDriver driver;
+	protected WebDriver driver;
 	AddToCartAction addToCartAction;
 	
 
@@ -50,7 +53,11 @@ public class AddToCartTest {
 	}
 	
 	@Test(dataProviderClass = CredentialsDataProvider.class, dataProvider = "ValidLogin", priority = 1, enabled = true)
-	public void sanity_loginWithValidEmail(ValidLogin validLoginData) {
+	public void loginWithValidEmail(ValidLogin validLoginData, Method method) {
+		
+		ExtentTestManager.startTest(method.getName(), "Invalid Login.");
+		ExtentTestManager.getTest();
+		
 		//WebDriver driver = new ChromeDriver();
 		driver.get("http://www.amazon.com");
 		driver.manage().window().maximize();
@@ -60,21 +67,32 @@ public class AddToCartTest {
 	}
 	
 	@Test(dataProviderClass = CredentialsDataProvider.class, dataProvider = "ValidLogin", priority = 2, enabled = true)
-	public void sanity_addToCartHeadPhone(ValidLogin validLoginData) {
+	public void addToCartHeadPhone(ValidLogin validLoginData, Method method) {
+		
+		ExtentTestManager.startTest(method.getName(), "Invalid Login.");
+		ExtentTestManager.getTest();
+		
 		AddToCartAction addToCartHeadPhone = new AddToCartAction(driver);
 		addToCartHeadPhone.addHeadphonesToCart();
 		
 	}
 	
 	@Test(dataProviderClass = CredentialsDataProvider.class, dataProvider = "ValidLogin", priority = 3, enabled = true)
-	public void sanity_addToCartMacbook(ValidLogin validLoginData) {
+	public void addToCartMacbook(ValidLogin validLoginData,Method method) {
+		
+		ExtentTestManager.startTest(method.getName(), "Invalid Login.");
+		ExtentTestManager.getTest();
 		
 		AddToCartAction addToCartMacBook = new AddToCartAction(driver);
 		addToCartMacBook.addMacBookPro();
 	}
 	
 	@Test(priority = 4, enabled = true)
-	public void sanity_deleteHeadPhonesAndMacFromCart() {
+	public void sanity_deleteHeadPhonesAndMacFromCart(Method method) {
+		
+		ExtentTestManager.startTest(method.getName(), "Invalid Login.");
+		ExtentTestManager.getTest();
+		
 		addToCartAction.navigateToHomePage();
 		addToCartAction.sanity_deleteHeadPhonesFromCart();
 		addToCartAction.sanity_reduceMacQuantityFromCart();

@@ -3,7 +3,8 @@
 <suite name="WebsiteSuite" parallel="false" preserve-order="true">
 
 <listeners>
-<listener class-name = "extentReports.ExtentReport"/>
+<listener class-name = "com.amazon.listeners.TestListener"/>
+<listener class-name = "com.amazon.listeners.AnnotationTransformer"/>
 </listeners>
 
 	<test name="RegressionTest" preserve-order="true" browser="chrome">

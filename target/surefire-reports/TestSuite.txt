@@ -1,97 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="2" total="10" passed="4">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Command line suite" duration-ms="57806" started-at="2019-06-13T12:46:57Z" finished-at="2019-06-13T12:47:55Z">
-    <groups>
-    </groups>
-    <test name="Command line test" duration-ms="57806" started-at="2019-06-13T12:46:57Z" finished-at="2019-06-13T12:47:55Z">
-      <class name="com.amazon.test.AddToCartTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.amazon.test.AddToCartTest@6aaa5eb0]" name="beforeClass" is-config="true" duration-ms="1679" started-at="2019-06-13T18:16:57Z" finished-at="2019-06-13T18:16:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="loginWithValidEmail(com.amazon.InputDataPojo.ValidLogin, java.lang.reflect.Method)[pri:1, instance:com.amazon.test.AddToCartTest@6aaa5eb0]" name="loginWithValidEmail" duration-ms="17267" started-at="2019-06-13T18:16:59Z" data-provider="ValidLogin" finished-at="2019-06-13T18:17:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@34a875b3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.loginWithValidEmail(com.amazon.InputDataPojo.ValidLogin,java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidEmail -->
-        <test-method status="PASS" signature="addToCartHeadPhone(com.amazon.InputDataPojo.ValidLogin, java.lang.reflect.Method)[pri:2, instance:com.amazon.test.AddToCartTest@6aaa5eb0]" name="addToCartHeadPhone" duration-ms="17741" started-at="2019-06-13T18:17:16Z" data-provider="ValidLogin" finished-at="2019-06-13T18:17:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@53dbe163]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.addToCartHeadPhone(com.amazon.InputDataPojo.ValidLogin,java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartHeadPhone -->
-        <test-method status="PASS" signature="addToCartMacbook(com.amazon.InputDataPojo.ValidLogin, java.lang.reflect.Method)[pri:3, instance:com.amazon.test.AddToCartTest@6aaa5eb0]" name="addToCartMacbook" duration-ms="13011" started-at="2019-06-13T18:17:34Z" data-provider="ValidLogin" finished-at="2019-06-13T18:17:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@db57326]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.addToCartMacbook(com.amazon.InputDataPojo.ValidLogin,java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartMacbook -->
-        <test-method status="PASS" signature="sanity_deleteHeadPhonesAndMacFromCart(java.lang.reflect.Method)[pri:4, instance:com.amazon.test.AddToCartTest@6aaa5eb0]" name="sanity_deleteHeadPhonesAndMacFromCart" duration-ms="7750" started-at="2019-06-13T18:17:47Z" finished-at="2019-06-13T18:17:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.sanity_deleteHeadPhonesAndMacFromCart(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sanity_deleteHeadPhonesAndMacFromCart -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.amazon.test.AddToCartTest@6aaa5eb0]" name="afterClass" is-config="true" duration-ms="148" started-at="2019-06-13T18:17:55Z" finished-at="2019-06-13T18:17:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.amazon.test.AddToCartTest -->
-      <class name="com.amazon.listeners.TestListener">
-        <test-method status="FAIL" signature="loginWithValidEmail(com.amazon.InputDataPojo.ValidLogin, java.lang.reflect.Method)[pri:1, instance:com.amazon.listeners.TestListener@3498ed]" name="loginWithValidEmail" duration-ms="1" started-at="2019-06-13T18:17:16Z" data-provider="ValidLogin" finished-at="2019-06-13T18:17:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@6ad3381f]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.loginWithValidEmail(com.amazon.InputDataPojo.ValidLogin,java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 58.031 sec <<< FAILURE!
+loginWithValidEmail(com.amazon.listeners.TestListener)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
 	at com.amazon.test.AddToCartTest.loginWithValidEmail(AddToCartTest.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -128,28 +40,9 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidEmail -->
-        <test-method status="FAIL" signature="addToCartHeadPhone(com.amazon.InputDataPojo.ValidLogin, java.lang.reflect.Method)[pri:2, instance:com.amazon.listeners.TestListener@3498ed]" name="addToCartHeadPhone" duration-ms="1" started-at="2019-06-13T18:17:34Z" data-provider="ValidLogin" finished-at="2019-06-13T18:17:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@525575]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.addToCartHeadPhone(com.amazon.InputDataPojo.ValidLogin,java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+
+addToCartHeadPhone(com.amazon.listeners.TestListener)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
 	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
 	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:68)
 	at com.amazon.pageActions.AddToCartAction.<init>(AddToCartAction.java:29)
@@ -189,28 +82,9 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartHeadPhone -->
-        <test-method status="FAIL" signature="addToCartMacbook(com.amazon.InputDataPojo.ValidLogin, java.lang.reflect.Method)[pri:3, instance:com.amazon.listeners.TestListener@3498ed]" name="addToCartMacbook" duration-ms="1" started-at="2019-06-13T18:17:47Z" data-provider="ValidLogin" finished-at="2019-06-13T18:17:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.amazon.InputDataPojo.ValidLogin@78383390]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.addToCartMacbook(com.amazon.InputDataPojo.ValidLogin,java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+
+addToCartMacbook(com.amazon.listeners.TestListener)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
 	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
 	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:68)
 	at com.amazon.pageActions.AddToCartAction.<init>(AddToCartAction.java:29)
@@ -250,23 +124,9 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartMacbook -->
-        <test-method status="FAIL" signature="sanity_deleteHeadPhonesAndMacFromCart(java.lang.reflect.Method)[pri:4, instance:com.amazon.listeners.TestListener@3498ed]" name="sanity_deleteHeadPhonesAndMacFromCart" duration-ms="1" started-at="2019-06-13T18:17:55Z" finished-at="2019-06-13T18:17:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.amazon.test.AddToCartTest.sanity_deleteHeadPhonesAndMacFromCart(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+
+sanity_deleteHeadPhonesAndMacFromCart(com.amazon.listeners.TestListener)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
 	at com.amazon.test.AddToCartTest.sanity_deleteHeadPhonesAndMacFromCart(AddToCartTest.java:96)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -303,13 +163,4 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sanity_deleteHeadPhonesAndMacFromCart -->
-      </class> <!-- com.amazon.listeners.TestListener -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
-</testng-results>
+
